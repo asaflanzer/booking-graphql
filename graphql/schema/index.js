@@ -42,14 +42,14 @@ input EventInput {
 input UserInput {
     email: String!
     password: String!
-    firstName: String!
-    lastName: String!
+    firstName: String
+    lastName: String
 }
 
 type RootQuery {
     events: [Event!]!
     bookings: [Booking!]!
-    login(email: String!, password: String!): AuthData! 
+    login(email: String!, password: String!): AuthData!
 }
 
 type RootMutation {
